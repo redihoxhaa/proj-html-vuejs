@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fontsource/sarabun": "^5.0.18",
+    "@fontsource/poppins": "^5.0.8",
     "@fontsource/shadows-into-light": "^5.0.18",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",

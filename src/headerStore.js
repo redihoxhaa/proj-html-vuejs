@@ -1,6 +1,7 @@
 import { reactive } from 'vue'
 
 export const headerStore = reactive({
+    slogan: 'Eveything about Lifestyle, Travel and Gadgets!',
     topLinks: [
         {
             title: 'Sign In'
