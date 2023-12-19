@@ -33,9 +33,9 @@ export default {
     background-color: $top-banner-bg-color;
 
     .custom-container {
-        padding: 19px 0;
+        padding: 17px 0;
         gap: 25px;
-        font-size: 13px;
+        font-size: 12px;
         color: $top-banner-text-color;
 
         .top-links {
