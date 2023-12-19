@@ -22,12 +22,13 @@ export default {
 
 <template>
     <div class="custom-navbar custom-container">
-        <nav>
+        <nav class="d-flex justify-content-between">
             <ul class="d-flex text-uppercase">
                 <li v-for="(link, index) in headerStore.navLinks" @click="makeActive(index)"
                     :class="{ active: selectedLink === index }"><a href="#">{{
                         link.title }}</a></li>
             </ul>
+            <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
         </nav>
     </div>
 </template>
@@ -37,11 +38,21 @@ export default {
 @use '../../assets/scss/partials/variables' as *;
 // /USES
 
-ul {
-    gap: 54px;
-    padding: 20px 0;
-    font-weight: 700;
-    color: $navbar-text-color;
+nav {
+    padding: 21px 0;
+
+    ul {
+        gap: 54px;
+        font-weight: 700;
+        color: $navbar-text-color;
+        padding: 0;
+    }
+
+    .fa-magnifying-glass {
+        color: $navbar-text-color;
+        border-left: 1px solid $navbar-icon-border-color;
+        padding-left: 20px;
+    }
 }
 
 .active {

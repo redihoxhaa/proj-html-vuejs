@@ -35,6 +35,6 @@ export default {
 // /USES
 
 .logo-wrapper {
-    border: 2px solid $solid-border-color;
+    border: 1px solid $solid-border-color;
 }
 </style>

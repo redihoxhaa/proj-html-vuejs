@@ -23,6 +23,6 @@ export default {
 <style lang="scss" scoped>
 .pic-container {
     width: 110px;
-    padding: 40px 0;
+    padding: 41px 0;
 }
 </style>
