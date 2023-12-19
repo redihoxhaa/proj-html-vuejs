@@ -22,15 +22,19 @@ export default {
 <template>
     <header>
         <TopBanner />
-        <Logo />
+        <div class="logo-wrapper">
+            <Logo />
+        </div>
         <Navbar />
     </header>
 </template>
 
 <style lang="scss" scoped>
 // USES
-
-
-
+@use '../../assets/scss/partials/variables' as *;
 // /USES
+
+.logo-wrapper {
+    border: 2px solid $solid-border-color;
+}
 </style>
