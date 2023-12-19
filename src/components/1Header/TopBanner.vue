@@ -13,11 +13,11 @@ export default {
 </script>
 
 <template>
-    <div class="wrapper">
+    <div class="top-banner wrapper">
         <div class="custom-container d-flex">
             <span>{{ headerStore.slogan }}</span>
             <ul class="top-links d-flex text-uppercase">
-                <a href="#" v-for="link in headerStore.topLinks">{{ link.title }}</a>
+                <li v-for="link in headerStore.topLinks"><a href="#">{{ link.title }}</a></li>
             </ul>
 
         </div>
