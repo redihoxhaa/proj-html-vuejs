@@ -1,13 +1,13 @@
 <script>
 // IMPORTS
 
-import CalendarElement from './CalendarElement.vue';
+
 
 // /IMPORTS
 
 export default {
     props: [],
-    components: { CalendarElement },
+    components: {},
     data() {
         return {
 
@@ -18,9 +18,7 @@ export default {
 }
 </script>
 
-<template>
-    <CalendarElement />
-</template>
+<template></template>
 
 <style lang="scss" scoped>
 // USES
