@@ -15,6 +15,12 @@ export default {
             mainStore
         }
     },
+    computed: {
+        jumbotronPostSplicer() {
+            let jumbotronPosts = mainStore.articles.map(elem => elem);
+            return jumbotronPosts.splice(0, 6)
+        }
+    },
     methods: {},
     mounted() { },
 }
@@ -24,7 +30,7 @@ export default {
     <div class="jumbotron">
         <div class="custom-container">
             <ul class="d-flex flex-wrap">
-                <li v-for="card in mainStore.articles.slice(0, 6)">
+                <li v-for="card in jumbotronPostSplicer">
                     <WidePicCard :bgPathProp="card.imgPath" :titleText="card.titleText" :paragraphText="card.paragraphText"
                         :badgeText="card.categories[0]" />
                 </li>

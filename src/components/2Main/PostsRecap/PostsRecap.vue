@@ -100,12 +100,12 @@ export default {
             h4 {
                 font-weight: $pr-title-font-weight;
                 font-size: $pr-title-font-size;
-                padding-bottom: 3px;
+                padding-bottom: $pr-title-padding-bottom;
             }
 
             li {
-                padding: 15px 0;
-                border-bottom: 1px dotted $dotted-border-color;
+                padding: $pr-li-padding;
+                border-bottom: $pr-li-bottom-border;
 
                 &:last-child {
                     border: none;
@@ -113,8 +113,8 @@ export default {
             }
 
             .pic-card-wrapper {
-                height: 188px;
-                margin-top: 37px;
+                height: $pr-pic-card-wrapper-height;
+                margin-top: $pr-pic-card-wrapper-margin-top;
             }
         }
 
@@ -126,7 +126,7 @@ export default {
 
         .bottom-section {
             h4 {
-                padding: 34px 0 20px 0;
+                padding: $pr-bottom-section-padding;
 
             }
         }

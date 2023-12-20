@@ -50,6 +50,10 @@ $mp-date-font-size: 11px;
 $mp-date-font-color: #888888;
 
 // MINIMIZED AUTHOR
+$ma-author-photo-width: 112px;
+$ma-author-photo-height: 112px;
+$ma-author-photo-margin: 20px;
+$ma-title-font-size: 16px;
 $ma-title-font-size: 16px;
 $ma-title-font-color: #212529;
 $ma-title-font-weight: 700;
@@ -108,11 +112,25 @@ $jumbotron-card-height: 250px;
 
 // POST RECAP
 $post-recap-padding: 55px 0;
+
 $pr-section-gap: 30px;
 $pr-section-columns: 3;
 $pr-section-height: 430px;
+
 $pr-title-font-weight: 700;
 $pr-title-font-size: 13px;
+$pr-title-padding-bottom: 3px;
+
+$pr-li-padding: 15px 0;
+$pr-li-bottom-border: 1px dotted #E2E2E2;
+
+$pr-pic-card-wrapper-height: 188px;
+$pr-pic-card-wrapper-margin-top: 37px;
+
+$pr-bottom-section-padding: 34px 0 20px 0;
+
+
+
 
 // WALL
 $calendar-main-color: #212529;

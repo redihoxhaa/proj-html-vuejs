@@ -38,11 +38,11 @@ export default {
 // /USES
 
 .wrapper {
-    gap: 20px;
+    gap: $ma-author-photo-margin;
 
     .pic-container {
-        width: 112px;
-        height: 112px;
+        width: $ma-author-photo-width;
+        height: $ma-author-photo-height;
         flex-shrink: 0;
 
         img {
