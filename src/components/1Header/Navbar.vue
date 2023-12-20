@@ -9,7 +9,7 @@ export default {
     data() {
         return {
             headerStore,
-            selectedLink: null,
+            selectedLink: 0,
         }
     },
     methods: {
