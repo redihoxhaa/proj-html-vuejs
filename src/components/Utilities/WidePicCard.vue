@@ -61,7 +61,7 @@ export default {
         position: absolute;
         inset: 0 0 0 0;
         padding: $card-padding;
-        background-color: rgba($color: $card-opacity-layer-color, $alpha: $card-opacity-layer-alpha);
+        background-color: $card-bg-color;
     }
 
     h3 {
