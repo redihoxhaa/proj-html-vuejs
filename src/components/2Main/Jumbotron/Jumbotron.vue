@@ -24,9 +24,9 @@ export default {
     <div class="jumbotron">
         <div class="custom-container">
             <ul class="d-flex flex-wrap">
-                <li v-for="card in mainStore.jumbotron">
-                    <WidePicCard :bgPathProp="card.bgPath" :titleText="card.titleText" :paragraphText="card.paragraphText"
-                        :badgeText="card.badgeText" />
+                <li v-for="card in mainStore.articles.slice(0, 6)">
+                    <WidePicCard :bgPathProp="card.imgPath" :titleText="card.titleText" :paragraphText="card.paragraphText"
+                        :badgeText="card.categories[0]" />
                 </li>
             </ul>
         </div>

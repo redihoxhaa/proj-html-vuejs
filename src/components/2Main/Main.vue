@@ -3,7 +3,7 @@
 
 import Jumbotron from './Jumbotron/Jumbotron.vue';
 import PostsRecap from './PostsRecap/PostsRecap.vue';
-import ChooseCategory from './ChooseCategory.vue';
+import ChooseCategory from './ChooseCategory/ChooseCategory.vue';
 import Wall from './Wall/Wall.vue';
 
 // /IMPORTS

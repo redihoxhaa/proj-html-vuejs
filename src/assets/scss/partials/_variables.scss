@@ -27,7 +27,7 @@ $solid-border-color: #EDEDED;
 $dotted-border-color: #E2E2E2;
 $link-border-color: #EEEEEE;
 
-// CARDS
+// WIDE CARDS
 $card-title-color: #FFFFFF;
 $card-p-color: #888888;
 $card-hover-border-color: #F7F7F7;
@@ -39,6 +39,16 @@ $card-p-line-height: 24px;
 $card-p-padding-top: 8px;
 $card-bg-color: rgba($color: #000000, $alpha: 0.5);
 $card-padding: 25px 25px;
+
+// MINIMIZED POST
+$mp-title-font-size: 14px;
+$mp-title-font-color: #212529;
+$mp-title-font-weight: normal;
+$mp-title-letter-spacing: -0.6px;
+$mp-date-padding-top: 3px;
+$mp-date-font-size: 11px;
+$mp-date-font-color: #888888;
+
 
 // TAGS
 $tags-bg-color: #212529;
@@ -89,6 +99,8 @@ $post-recap-padding: 55px 0;
 $pr-section-gap: 30px;
 $pr-section-columns: 3;
 $pr-section-height: 430px;
+$pr-title-font-weight: 700;
+$pr-title-font-size: 13px;
 
 // WALL
 $calendar-main-color: #212529;
