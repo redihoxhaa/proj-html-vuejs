@@ -1,7 +1,7 @@
 <script>
 // IMPORTS
 
-import Jumbotron from './Jumbotron.vue';
+import Jumbotron from './Jumbotron/Jumbotron.vue';
 import PostsRecap from './PostsRecap/PostsRecap.vue';
 import ChooseCategory from './ChooseCategory.vue';
 import Wall from './Wall/Wall.vue';

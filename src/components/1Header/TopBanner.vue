@@ -31,15 +31,16 @@ export default {
 
 .wrapper {
     background-color: $top-banner-bg-color;
+    letter-spacing: $normal-letter-spacing;
 
     .custom-container {
-        padding: 17px 0;
-        gap: 25px;
-        font-size: 12px;
+        padding: $top-banner-padding;
+        gap: $top-banner-gap;
+        font-size: $top-banner-font-size;
         color: $top-banner-text-color;
 
         .top-links {
-            gap: 25px;
+            gap: $top-links-gap;
         }
     }
 }

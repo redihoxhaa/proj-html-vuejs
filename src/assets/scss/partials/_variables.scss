@@ -1,11 +1,22 @@
 // GLOBAL
 $main-color: #0088CC;
 $secondary-color: #FFFFFF;
+$bold-letter-spacing: -0.9px;
+$normal-letter-spacing: -0.3px;
 
 // BUTTONS
 $button-bg-color: #212529;
 $button-text-color: #FFFFFF;
 $button-border-color: #BFBFBF;
+
+// BADGES
+$badge-bg-color: #0088CC;
+$badge-text-color: #FFFFFF;
+$badge-border-radius: 2px;
+$badge-font-weight: 600;
+$badge-font-size: 10px;
+$badge-padding: 5px 8px;
+$badge-margin-bottom: 7px;
 
 // LABELS
 $label-bg-color: #0088CC;
@@ -15,6 +26,20 @@ $label-text-color: #FFFFFF;
 $solid-border-color: #EDEDED;
 $dotted-border-color: #E2E2E2;
 $link-border-color: #EEEEEE;
+
+// CARDS
+$card-title-color: #FFFFFF;
+$card-p-color: #888888;
+$card-hover-border-color: #F7F7F7;
+$card-font-weight: 700;
+$card-title-size: 20px;
+$card-p-size: 14px;
+$card-p-spacing: -1.1px;
+$card-p-line-height: 24px;
+$card-p-padding-top: 8px;
+$card-opacity-layer-alpha: 0.5;
+$card-opacity-layer-color: #000000;
+$card-padding: 25px 25px;
 
 // TAGS
 $tags-bg-color: #212529;
@@ -26,19 +51,40 @@ $secondary-text-color: #B7B7B7;
 $white-text-color: #FFFFFF;
 $link-text-color: #2C9CD5;
 
+// LOGO
+$logo-width: 100px;
+$logo-padding: 36px 0;
+
 //////////////////////////////////////
 
 
 // HEADER
+$header-bg-color: #FFFFFF;
+
 $top-banner-bg-color: #0088CC;
 $top-banner-text-color: #FFFFFF;
-$header-bg-color: #FFFFFF;
+$top-banner-padding: 17px 0;
+$top-banner-gap: 25px;
+$top-banner-font-size: 12px;
+$top-links-gap: 25px;
+
 $navbar-text-color: #444444;
 $navbar-active-text-color: #0088CC;
-$navbar-icon-border-color: #F7F7F7;
+$navbar-padding: 18px 0;
+$navbar-gap: 50px;
+$navbar-font-weight: 700;
+$navbar-font-size: 15px;
+$navbar-icon-border-left: 1px solid #F7F7F7;
+$navbar-icon-font-size: 12px;
+$navbar-icon-padding-left: 20px;
+
 
 // JUMBOTRON
 $jumbotron-bg-color: #F7F7F7;
+$jumbotron-padding: 50px 0;
+$jumbotron-gap: 30px;
+$jumbotron-img-row: 3;
+$jumbotron-card-height: 250px;
 
 // WALL
 $calendar-main-color: #212529;

@@ -39,22 +39,22 @@ export default {
 // /USES
 
 nav {
-    padding: 18px 0;
+    padding: $navbar-padding;
 
     ul {
-        gap: 47px;
-        font-weight: 700;
+        gap: $navbar-gap;
+        font-weight: $navbar-font-weight;
         color: $navbar-text-color;
         padding: 0;
-        font-size: 15px;
-        letter-spacing: -0.5px;
+        font-size: $navbar-font-size;
+        letter-spacing: $bold-letter-spacing;
     }
 
     .fa-magnifying-glass {
         color: $navbar-text-color;
-        font-size: 12px;
-        border-left: 1px solid $navbar-icon-border-color;
-        padding-left: 20px;
+        font-size: $navbar-icon-font-size;
+        border-left: $navbar-icon-border-left;
+        padding-left: $navbar-icon-padding-left;
     }
 }
 

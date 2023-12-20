@@ -22,7 +22,7 @@ export default {
 
 <style lang="scss" scoped>
 .pic-container {
-    width: 100px;
-    padding: 36px 0;
+    width: $logo-width;
+    padding: $logo-padding;
 }
 </style>
