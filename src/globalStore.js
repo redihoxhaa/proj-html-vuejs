@@ -8,6 +8,7 @@ export const globalStore = reactive({
     greyLogo: {
         path: '/img/logo-footer.png',
         alt: 'Porto Logo'
-    }
+    },
+    categories: ['Gadgets', 'Photography', 'Lifestyle', 'Fashion', 'Recipes', 'Travel', 'Business', 'Architecture', 'Reviews', 'Sports', 'Videos', 'Technology', 'Design']
 });
 

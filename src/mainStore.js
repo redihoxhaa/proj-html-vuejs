@@ -291,7 +291,7 @@ export const mainStore = reactive({
             comments: 12,
         },
 
-    ]
+    ],
 
 });
 
