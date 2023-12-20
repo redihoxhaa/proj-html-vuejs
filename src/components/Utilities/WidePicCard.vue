@@ -80,6 +80,7 @@ export default {
         padding-top: $card-p-padding-top;
         font-size: $card-p-size;
         letter-spacing: $card-p-spacing;
+        margin-bottom: 0;
 
     }
 }

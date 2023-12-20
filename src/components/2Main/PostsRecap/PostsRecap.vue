@@ -59,16 +59,21 @@ export default {
             </section>
 
             <section>
-                <div>
+                <div class="top-section">
                     <h4 class="text-uppercase">Featured Posts</h4>
-
-                    <WidePicCard :bgPathProp="mainStore.articles[14].imgPath" :titleText="mainStore.articles[14].titleText"
-                        :paragraphText="mainStore.articles[14].paragraphText"
-                        :badgeText="mainStore.articles[14].categories[0]" />
+                    <div class="pic-card-wrapper">
+                        <WidePicCard :bgPathProp="mainStore.articles[14].imgPath"
+                            :titleText="mainStore.articles[14].titleText"
+                            :paragraphText="mainStore.articles[14].paragraphText"
+                            :badgeText="mainStore.articles[14].categories[0]" />
+                    </div>
                 </div>
-                <div>
+
+                <div class="bottom-section">
                     <h4 class="text-uppercase">Featured Author</h4>
-                    <MinimizedAuthor />
+                    <MinimizedAuthor :authorImgPath="mainStore.articles[0].authorImgPath"
+                        :authorName="mainStore.articles[0].authorName"
+                        :authorDescription="mainStore.articles[0].authorDescription" />
                 </div>
 
             </section>
@@ -105,6 +110,24 @@ export default {
                 &:last-child {
                     border: none;
                 }
+            }
+
+            .pic-card-wrapper {
+                height: 188px;
+                margin-top: 37px;
+            }
+        }
+
+        .top-section {
+            h4 {
+                padding-bottom: 0px;
+            }
+        }
+
+        .bottom-section {
+            h4 {
+                padding: 34px 0 20px 0;
+
             }
         }
     }
