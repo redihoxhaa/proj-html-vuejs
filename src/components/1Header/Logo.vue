@@ -21,6 +21,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../../assets/scss/partials/variables' as *;
+
 .pic-container {
     width: $logo-width;
     padding: $logo-padding;
