@@ -6,6 +6,7 @@ import RecentPosts from './RecentPosts.vue'
 import RecentComments from './RecentComments.vue'
 import Categories from './Categories.vue'
 import TopLabel from '../../Utilities/TopLabel.vue'
+import { footerStore } from '../../../footerStore'
 
 // /IMPORTS
 
@@ -14,7 +15,7 @@ export default {
     components: { AboutTheBlog, RecentPosts, RecentComments, Categories, TopLabel },
     data() {
         return {
-
+            footerStore
         }
     },
     methods: {},
@@ -26,13 +27,22 @@ export default {
     <div class="top-footer">
         <div class="custom-container">
             <TopLabel :text="'Get in Touch'" />
-            <div class="sections">
+            <div class="sections d-flex">
                 <section class="about-the-blog">
                     <h4 class="text-uppercase">About The Blog</h4>
                     <AboutTheBlog />
                 </section>
+                <section class="recent-posts">
+                    <h4 class="text-uppercase">Recent Posts</h4>
+                    <ul>
+                        <li v-for="post in footerStore.recentPosts">
+                            <RecentPosts :imgPath="post.imgPath" :content="post.content" :date="post.date" />
+                        </li>
+                    </ul>
 
-                <RecentPosts />
+                </section>
+
+
                 <RecentComments />
                 <Categories />
             </div>

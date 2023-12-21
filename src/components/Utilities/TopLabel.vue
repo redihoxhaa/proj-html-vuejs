@@ -40,7 +40,7 @@ div {
         left: -10px;
         width: 10px;
         height: 16px;
-        background: linear-gradient(301deg, rgba(0, 85, 128, 1) 50%, rgba(255, 255, 255, 0) 50%, rgba(0, 85, 128, 0) 100%);
+        background: linear-gradient(301deg, rgba(0, 85, 128, 1) 45%, rgba(255, 255, 255, 0) 50%, rgba(0, 85, 128, 0) 100%);
     }
 
 }

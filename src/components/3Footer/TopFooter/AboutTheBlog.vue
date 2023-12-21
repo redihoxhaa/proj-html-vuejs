@@ -40,7 +40,7 @@ p {
     font-size: 13px;
     letter-spacing: -0.2px;
     line-height: 25px;
-    width: 420px;
+    width: 418px;
 
 }
 
