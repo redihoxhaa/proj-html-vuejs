@@ -27,7 +27,5 @@ export default {
 <style lang="scss" scoped>
 // USES
 
-
-
 // /USES
 </style>
