@@ -39,11 +39,15 @@ export default {
                             <RecentPosts :imgPath="post.imgPath" :content="post.content" :date="post.date" />
                         </li>
                     </ul>
-
                 </section>
-
-
-                <RecentComments />
+                <section class="recent-comments">
+                    <h4 class="text-uppercase">Recent Comments</h4>
+                    <ul>
+                        <li v-for="comment in footerStore.recentComments">
+                            <RecentComments :user="comment.user" :post="comment.post" :date="comment.date" />
+                        </li>
+                    </ul>
+                </section>
                 <Categories />
             </div>
         </div>
@@ -59,6 +63,7 @@ export default {
     position: relative;
     padding: 79px 0;
     background-color: $top-footer-bg-color;
+    margin-top: 20px;
 
     .sections {
         section {
@@ -74,7 +79,11 @@ export default {
         }
 
         .about-the-blog {
-            margin-right: 65px;
+            margin-right: 63px;
+        }
+
+        .recent-posts {
+            margin-right: 49px;
         }
     }
 }

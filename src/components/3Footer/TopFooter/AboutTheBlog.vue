@@ -47,6 +47,7 @@ p {
 .rest-of-the-post {
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-top: 6px;
 
 
 }
