@@ -11,7 +11,7 @@ export default {
     data() {
         return {
             globalStore,
-            selectedPage: 0,
+            selectedPage: 1,
         }
     },
     methods: {
@@ -36,12 +36,12 @@ export default {
 
 <template>
     <ul class="page-scroller d-flex justify-content-end align-items-center">
-        <li @click="prevPage()"><font-awesome-icon icon="fa-solid fa-chevron-left" /></li>
+        <li @click="prevPage(); $emit('prevPage')"><font-awesome-icon icon="fa-solid fa-chevron-left" /></li>
         <li v-for="(page, index) in globalStore.pageNumbers" :class="{ active: selectedPage === index }"
-            @click="makeActive(index)">
+            @click="makeActive(index); $emit('pageClick', page)">
             {{ page }}
         </li>
-        <li @click="nextPage()"><font-awesome-icon icon="fa-solid fa-chevron-right" /></li>
+        <li @click="nextPage(); $emit('nextPage')"><font-awesome-icon icon="fa-solid fa-chevron-right" /></li>
     </ul>
 </template>
 

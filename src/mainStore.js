@@ -213,7 +213,7 @@ export const mainStore = reactive({
         {
             id: 13,
             titleText: 'Main Reasons To Stop Texting And Driving',
-            imgPath: '/img/blog-65(1).jpg',
+            imgPath: '/img/blog-65%20(1).jpg',
             littleImgPath: '/img/blog-65.jpg',
             imgCollagePaths: [],
             pubYear: '2019',
@@ -245,7 +245,7 @@ export const mainStore = reactive({
         {
             id: 15,
             titleText: 'Why should I buy a smartwatch?',
-            imgPath: '/img/blog-67(1).jpg',
+            imgPath: '/img/blog-67%20(1).jpg',
             littleImgPath: '/img/blog-67.jpg',
             imgCollagePaths: [],
             pubYear: '2019',

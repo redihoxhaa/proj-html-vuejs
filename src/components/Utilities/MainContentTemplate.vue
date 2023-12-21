@@ -32,7 +32,7 @@ export default {
 
 <template>
     <div class="custom-content">
-        <div class="pic-container">
+        <div class="pic-container" :class="{ 'flex-it': typeof imgPath === 'string' }">
             <img :src="imgPath" :alt="titleText" v-if="typeof imgPath === 'string'">
             <ImagesToGrid :images="imgPath" v-else />
 
@@ -73,6 +73,18 @@ export default {
 @use '../../assets/scss/partials/variables' as *;
 
 .custom-content {
+
+    .pic-container {
+        max-height: 700px;
+        overflow: hidden;
+
+    }
+
+    .flex-it {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .infos {
         margin-top: 25px;

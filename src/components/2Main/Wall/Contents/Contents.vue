@@ -11,17 +11,35 @@ export default {
     components: { MainContentTemplate, PageNav, },
     data() {
         return {
-            mainStore
-
+            mainStore,
+            startIndex: 6,
+            postsToShow: 5
         }
     },
     computed: {
         contentsPostSplicer() {
             let contents = mainStore.articles.map(elem => elem);
-            return contents.splice(6, 5)
+            return contents.splice(this.startIndex, this.postsToShow)
         }
     },
-    methods: {},
+    methods: {
+        prevPage() {
+            if (this.startIndex > this.postsToShow) {
+                this.startIndex -= this.postsToShow
+            }
+        },
+        nextPage() {
+            if (this.startIndex < mainStore.articles.length - this.postsToShow) {
+                this.startIndex += this.postsToShow
+            }
+        },
+        changePage(page) {
+            console.log(page)
+            this.startIndex = (this.postsToShow * page) - this.postsToShow + 1;
+            console.log(page)
+        }
+
+    },
     mounted() { },
 }
 </script>
@@ -35,7 +53,7 @@ export default {
                 :pubDay="article.pubDay" :pubMonth="article.pubMonth" />
         </li>
         <li class="page-navigator">
-            <PageNav />
+            <PageNav @prevPage="prevPage()" @nextPage="nextPage()" @pageClick="changePage" />
         </li>
     </ul>
 </template>
@@ -49,12 +67,13 @@ ul {
     width: 1050px;
 
     li {
-        width: fit-content;
+        width: 100%;
     }
 
     .page-navigator {
         margin-top: -11px;
         align-self: flex-end;
+        width: fit-content;
     }
 }
 </style>
