@@ -20,14 +20,20 @@ export default {
 </script>
 
 <template>
-    <Contents />
-    <Feeds />
+    <div class="custom-container">
+        <div class="wrapper d-flex">
+            <Contents />
+            <Feeds />
+        </div>
+    </div>
 </template>
 
 <style lang="scss" scoped>
 // USES
-
-
-
+@use '../../../assets/scss/partials/variables' as *;
 // /USES
+
+.custom-container {
+    padding: $wall-padding;
+}
 </style>

@@ -117,7 +117,7 @@ export const mainStore = reactive({
         {
             id: 7,
             titleText: 'Simple Ways to Have a Pretty Face',
-            imgPath: '/img/blog-55(1).jpg',
+            imgPath: '/img/blog-55%20(1).jpg',
             littleImgPath: '/img/blog-55.jpg',
             imgCollagePaths: [],
             pubYear: '2019',
@@ -133,7 +133,7 @@ export const mainStore = reactive({
         {
             id: 8,
             titleText: 'Ranking the greatest players in basketball',
-            imgPath: '/img/blog-56(1).jpg',
+            imgPath: '/img/blog-56%20(1).jpg',
             littleImgPath: '/img/blog-56.jpg',
             imgCollagePaths: [],
             pubYear: '2019',
@@ -149,7 +149,7 @@ export const mainStore = reactive({
         {
             id: 9,
             titleText: 'Top Camper Trailer Towing Tips',
-            imgPath: '/img/blog-58(1).jpg',
+            imgPath: '/img/blog-58%20(1).jpg',
             littleImgPath: '/img/blog-58.jpg',
             imgCollagePaths: [],
             pubYear: '2019',
