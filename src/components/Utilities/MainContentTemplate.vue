@@ -7,7 +7,7 @@ import ImagesToGrid from './ImagesToGrid.vue';
 // /IMPORTS
 
 export default {
-    props: ['imgPath', 'titleText', 'paragraphText', 'authorName', 'categories', 'comments'],
+    props: ['imgPath', 'titleText', 'paragraphText', 'authorName', 'categories', 'comments', 'pubDay', 'pubMonth'],
     components: { CalendarElement, ImagesToGrid },
     data() {
         return {
@@ -35,9 +35,9 @@ export default {
             <ImagesToGrid :images="imgPath" v-else />
 
         </div>
-        <section>
+        <section class="d-flex">
             <div class="custom-col-left">
-                <CalendarElement />
+                <CalendarElement :pubDay="pubDay" :pubMonth="pubMonth" />
             </div>
             <div class="custom-col-right">
                 <h2>{{ titleText }}</h2>
@@ -63,7 +63,9 @@ export default {
 <style lang="scss" scoped>
 // USES
 
+@use '../../assets/scss/partials/variables' as *;
 
+.custom-content {}
 
 // /USES
 </style>

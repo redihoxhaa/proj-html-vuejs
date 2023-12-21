@@ -31,7 +31,8 @@ export default {
         <li v-for="article in contentsPostSplicer">
             <MainContentTemplate :titleText="article.titleText" :paragraphText="article.paragraphText"
                 :authorName="article.authorName" :categories="article.categories" :comments="article.comments"
-                :imgPath="article.imgPath ? article.imgPath : (article.littleImgPath ? article.littleImgPath : article.imgCollagePaths)" />
+                :imgPath="article.imgPath ? article.imgPath : (article.littleImgPath ? article.littleImgPath : article.imgCollagePaths)"
+                :pubDay="article.pubDay" :pubMonth="article.pubMonth" />
         </li>
     </ul>
 
@@ -42,4 +43,11 @@ export default {
 // USES
 @use '../../../../assets/scss/partials/variables' as *;
 // /USES
+
+ul {
+    li {
+
+        width: 1050px;
+    }
+}
 </style>
