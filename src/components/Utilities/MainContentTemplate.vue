@@ -90,6 +90,7 @@ export default {
         margin-top: 25px;
 
         .custom-col-right {
+            width: 100%;
             margin-bottom: 50px;
             padding-bottom: 3px;
             border-bottom: 1px solid #EEEEEE;
