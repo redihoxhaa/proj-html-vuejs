@@ -1,20 +1,6 @@
 <script>
-// IMPORTS
-
-
-
-// /IMPORTS
-
 export default {
     props: ['badgeText'],
-    components: {},
-    data() {
-        return {
-
-        }
-    },
-    methods: {},
-    mounted() { },
 }
 </script>
 

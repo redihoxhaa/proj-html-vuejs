@@ -1,21 +1,13 @@
 <script>
 // IMPORTS
-
 import CalendarElement from './CalendarElement.vue';
 import ImagesToGrid from './ImagesToGrid.vue';
 import Button from './Button.vue';
-
-
 // /IMPORTS
 
 export default {
     props: ['imgPath', 'titleText', 'paragraphText', 'authorName', 'categories', 'comments', 'pubDay', 'pubMonth'],
     components: { CalendarElement, ImagesToGrid, Button },
-    data() {
-        return {
-
-        }
-    },
     computed: {
         categoriesSplicer() {
             let contents = this.categories.map(elem => elem);
@@ -25,8 +17,6 @@ export default {
             return contents[0]
         }
     },
-    methods: {},
-    mounted() { },
 }
 </script>
 
@@ -69,9 +59,9 @@ export default {
 
 <style lang="scss" scoped>
 // USES
-
 @use '../../assets/scss/partials/variables' as *;
 
+// /USES
 .custom-content {
 
     .pic-container {
@@ -135,6 +125,4 @@ export default {
         }
     }
 }
-
-// /USES
 </style>

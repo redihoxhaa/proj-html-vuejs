@@ -1,11 +1,6 @@
 <script>
-// IMPORTS
-
-// /IMPORTS
-
 export default {
     props: ['widthProp', 'altContent', 'imgPath', 'paddingProp', 'opacityProp'],
-    components: {},
     data() {
         return {
             width: this.widthProp,

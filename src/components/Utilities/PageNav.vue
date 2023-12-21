@@ -1,13 +1,9 @@
 <script>
 // IMPORTS
-
 import { globalStore } from '../../globalStore';
-
 // /IMPORTS
 
 export default {
-    props: [],
-    components: {},
     data() {
         return {
             globalStore,
@@ -29,8 +25,6 @@ export default {
             }
         }
     },
-
-    mounted() { },
 }
 </script>
 

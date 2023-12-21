@@ -1,13 +1,11 @@
 <script>
 // IMPORTS
-
 import MainContentTemplate from '../../../Utilities/MainContentTemplate.vue';
 import PageNav from '../../../Utilities/PageNav.vue';
 import { mainStore } from '../../../../mainStore';
 // /IMPORTS
 
 export default {
-    props: [],
     components: { MainContentTemplate, PageNav, },
     data() {
         return {
@@ -40,7 +38,6 @@ export default {
         }
 
     },
-    mounted() { },
 }
 </script>
 

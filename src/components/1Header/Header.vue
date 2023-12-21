@@ -4,7 +4,6 @@ import TopBanner from './TopBanner.vue';
 import Logo from '../Utilities/Logo.vue';
 import Navbar from './Navbar.vue';
 import { globalStore } from '../../globalStore';
-
 // /IMPORTS
 
 export default {
@@ -13,11 +12,9 @@ export default {
     data() {
         return {
             globalStore
-
         }
     },
-    methods: {},
-    mounted() { },
+
 }
 </script>
 

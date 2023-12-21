@@ -1,12 +1,9 @@
 <script>
 // IMPORTS
-
 import { mainStore } from '../../../mainStore';
 import MinimizedPost from '../../Utilities/MinimizedPost.vue';
 import MinimizedAuthor from '../../Utilities/MinimizedAuthor.vue';
 import WidePicCard from '../../Utilities/WidePicCard.vue';
-
-
 // /IMPORTS
 
 export default {
@@ -28,8 +25,6 @@ export default {
             return popularPosts.splice(12, 5)
         }
     },
-    methods: {},
-    mounted() { },
 }
 </script>
 

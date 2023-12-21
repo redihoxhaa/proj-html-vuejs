@@ -20,7 +20,7 @@ export default {
     </div>
 </template>
 
-<style scoped>
+<style lagn="scss" scoped>
 .image-collage {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

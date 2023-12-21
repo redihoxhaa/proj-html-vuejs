@@ -5,7 +5,6 @@ import Button from '../../Utilities/Button.vue'
 // /IMPORTS
 
 export default {
-    props: [],
     components: { Button },
     data() {
         return {
@@ -16,7 +15,6 @@ export default {
     },
     computed: {
         categorySplicer() {
-
             let categories = globalStore.categories.map(elem => elem);
             return categories.splice(this.startIndex, this.visibileCategories)
         }
@@ -31,7 +29,6 @@ export default {
             if (this.startIndex > 0) { this.startIndex-- }
         }
     },
-    mounted() { },
 }
 </script>
 

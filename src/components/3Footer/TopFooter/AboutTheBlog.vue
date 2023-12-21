@@ -4,15 +4,11 @@ import { footerStore } from '../../../footerStore';
 // /IMPORTS
 
 export default {
-    props: [],
-    components: {},
     data() {
         return {
             footerStore
         }
     },
-    methods: {},
-    mounted() { },
 }
 </script>
 
@@ -30,10 +26,7 @@ export default {
 <style lang="scss" scoped>
 // USES
 @use '../../../assets/scss/partials/variables' as *;
-
 // /USES
-
-
 
 p {
     color: $top-footer-main-text-color;

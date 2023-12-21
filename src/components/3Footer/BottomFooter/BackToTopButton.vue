@@ -7,8 +7,8 @@ export default {
                 behavior: 'smooth'
             });
         }
-    }
-};
+    },
+}
 </script>
 
 
@@ -19,13 +19,17 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+// USES
+@use '../../../assets/scss/partials/variables' as *;
+// /USES
+
 .scroll-to-top {
     position: absolute;
     bottom: 0px;
     right: 20px;
     padding: 10px 19px;
-    background-color: #333333;
-    color: #B7B7B7;
+    background-color: $backtotop-bg-color;
+    color: $backtotop-icon-color;
     cursor: pointer;
     border-radius: 5px 5px 0 0;
 

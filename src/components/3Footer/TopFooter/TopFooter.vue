@@ -1,6 +1,5 @@
 <script>
 // IMPORTS
-
 import AboutTheBlog from './AboutTheBlog.vue'
 import RecentPosts from './RecentPosts.vue'
 import RecentComments from './RecentComments.vue'
@@ -8,12 +7,10 @@ import BadgeList from '../../Utilities/BadgeList.vue'
 import TopLabel from '../../Utilities/TopLabel.vue'
 import { footerStore } from '../../../footerStore'
 import { globalStore } from '../../../globalStore'
-globalStore
-
 // /IMPORTS
 
 export default {
-    props: [],
+
     components: { AboutTheBlog, RecentPosts, RecentComments, BadgeList, TopLabel },
     data() {
         return {
@@ -21,8 +18,6 @@ export default {
             globalStore
         }
     },
-    methods: {},
-    mounted() { },
 }
 </script>
 

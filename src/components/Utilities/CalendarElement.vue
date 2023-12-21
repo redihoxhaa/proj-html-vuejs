@@ -1,26 +1,12 @@
 <script>
-// IMPORTS
-
-
-
-// /IMPORTS
-
 export default {
     props: ['pubDay', 'pubMonth'],
-    components: {},
-    data() {
-        return {
-
-        }
-    },
     computed: {
         monthTrimmer() {
             let trimmedMonth = this.pubMonth
             return trimmedMonth.slice(0, 3)
         }
     },
-    methods: {},
-    mounted() { },
 }
 </script>
 

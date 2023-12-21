@@ -1,10 +1,6 @@
 <script>
-// IMPORTS
-// /IMPORTS
-
 export default {
     props: ['arrayToSearchIn', 'badgePaddingProp', 'badgeColorProp', 'badgeBgColorProp', 'badgeBorderProp', 'badgeBorderRadiusProp', 'badgeFontSizeProp', 'badgeFontWeightProp', 'badgeWidthProp', 'badgeHeightProp', 'badgeHoverBgColorProp', 'badgeSpaceProp', 'badgeGapProp', 'badgeLetterSpacingProp'],
-    components: {},
     data() {
         return {
             badgePadding: this.badgePaddingProp,
@@ -40,8 +36,6 @@ export default {
             }
         }
     },
-    methods: {},
-    mounted() { },
 }
 </script>
 

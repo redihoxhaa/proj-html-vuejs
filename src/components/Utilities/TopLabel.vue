@@ -1,16 +1,6 @@
 <script>
-// IMPORTS
-// /IMPORTS
-
 export default {
     props: ['text'],
-    components: {},
-    data() {
-        return {
-        }
-    },
-    methods: {},
-    mounted() { },
 }
 </script>
 

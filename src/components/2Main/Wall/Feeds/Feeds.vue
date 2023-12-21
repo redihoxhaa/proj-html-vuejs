@@ -6,13 +6,9 @@ import BadgeList from '../../../Utilities/BadgeList.vue';
 import SocialCallToAction from '../../../Utilities/SocialCallToAction.vue';
 import { mainStore } from '../../../../mainStore';
 import { globalStore } from '../../../../globalStore';
-globalStore
-
-
 // /IMPORTS
 
 export default {
-    props: [],
     components: { Tweet, ImagesToGrid, BadgeList, SocialCallToAction },
     data() {
         return {
@@ -20,8 +16,6 @@ export default {
             globalStore
         }
     },
-    methods: {},
-    mounted() { },
 }
 </script>
 

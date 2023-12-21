@@ -1,20 +1,6 @@
 <script>
-// IMPORTS
-
-
-
-// /IMPORTS
-
 export default {
     props: ['imgPathProp', 'titleText', 'pubMonthProp', 'pubDayProp', 'pubYearProp'],
-    components: {},
-    data() {
-        return {
-
-        }
-    },
-    methods: {},
-    mounted() { },
 }
 </script>
 

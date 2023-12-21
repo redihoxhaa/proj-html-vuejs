@@ -1,24 +1,18 @@
 <script>
 // IMPORTS
-
 import Logo from '../../Utilities/Logo.vue';
 import InfoLinks from './InfoLinks.vue';
 import BackToTopButton from './BackToTopButton.vue';
 import { globalStore } from '../../../globalStore';
-
-
 // /IMPORTS
 
 export default {
-    props: [],
     components: { Logo, InfoLinks, BackToTopButton },
     data() {
         return {
             globalStore
         }
     },
-    methods: {},
-    mounted() { },
 }
 </script>
 

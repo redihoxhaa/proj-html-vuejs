@@ -1,14 +1,10 @@
 <script>
 // IMPORTS
-
 import { mainStore } from '../../../mainStore';
 import WidePicCard from '../../Utilities/WidePicCard.vue';
-
 // /IMPORTS
 
 export default {
-    props: [],
-
     components: { WidePicCard },
     data() {
         return {
@@ -21,8 +17,6 @@ export default {
             return jumbotronPosts.splice(0, 6)
         }
     },
-    methods: {},
-    mounted() { },
 }
 </script>
 

@@ -2,11 +2,6 @@
 
 export default {
     props: ['imgPath', 'content', 'date'],
-    data() {
-        return {
-
-        }
-    }
 }
 </script>
 

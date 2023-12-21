@@ -1,8 +1,6 @@
 <script>
 // IMPORTS
-
 import { headerStore } from '../../headerStore';
-
 // /IMPORTS
 
 export default {

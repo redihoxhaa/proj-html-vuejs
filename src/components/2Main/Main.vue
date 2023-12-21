@@ -1,23 +1,13 @@
 <script>
 // IMPORTS
-
 import Jumbotron from './Jumbotron/Jumbotron.vue';
 import PostsRecap from './PostsRecap/PostsRecap.vue';
 import ChooseCategory from './ChooseCategory/ChooseCategory.vue';
 import Wall from './Wall/Wall.vue';
-
 // /IMPORTS
 
 export default {
-    props: [],
     components: { Jumbotron, PostsRecap, ChooseCategory, Wall },
-    data() {
-        return {
-
-        }
-    },
-    methods: {},
-    mounted() { },
 }
 </script>
 
@@ -27,15 +17,7 @@ export default {
         <PostsRecap />
         <ChooseCategory />
         <Wall />
-
-
     </main>
 </template>
 
-<style lang="scss" scoped>
-// USES
-
-
-
-// /USES
-</style>
+<style lang="scss" scoped></style>

@@ -1,8 +1,6 @@
 <script>
 // IMPORTS
-
 import Badge from './Badge.vue';
-
 // /IMPORTS
 
 export default {
@@ -21,8 +19,6 @@ export default {
 
         }
     },
-    methods: {},
-    mounted() { },
 }
 </script>
 
@@ -35,10 +31,6 @@ export default {
                 <p>{{ paragraphText }}</p>
             </div>
         </div>
-
-
-
-
     </div>
 </template>
 

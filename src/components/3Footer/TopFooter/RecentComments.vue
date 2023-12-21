@@ -2,11 +2,6 @@
 
 export default {
     props: ['user', 'post', 'date'],
-    data() {
-        return {
-
-        }
-    }
 }
 </script>
 
@@ -14,7 +9,7 @@ export default {
     <div class="recent-comment d-flex flex-column">
         <div class="activity d-flex">
 
-            <div>
+            <div class="wrapper">
                 <font-awesome-icon icon="fa-solid fa-chevron-right" />
                 <a href="#" class="user">
                     {{ user }}</a>

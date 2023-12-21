@@ -1,9 +1,7 @@
 <script>
 // IMPORTS
-
 import Contents from './Contents/Contents.vue';
 import Feeds from './Feeds/Feeds.vue';
-
 // /IMPORTS
 
 export default {
@@ -14,8 +12,6 @@ export default {
 
         }
     },
-    methods: {},
-    mounted() { },
 }
 </script>
 

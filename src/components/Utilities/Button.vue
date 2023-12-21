@@ -1,8 +1,4 @@
 <script>
-// IMPORTS
-
-// /IMPORTS
-
 export default {
     props: ['btnPaddingProp', 'contentText', 'btnColorProp', 'btnBgColorProp', 'btnBorderProp', 'btnBorderRadiusProp', 'btnFontSizeProp', 'btnFontWeightProp', 'btnWidthProp', 'btnHeightProp', 'btnHoverBgColorProp', 'btnSpaceProp'],
     data() {
@@ -37,9 +33,6 @@ export default {
             }
         }
     },
-
-    methods: {},
-    mounted() { },
 }
 </script>
 
