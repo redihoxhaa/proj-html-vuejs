@@ -73,7 +73,7 @@ export default {
 
 .top-footer {
     position: relative;
-    padding: 79px 0;
+    padding: 79px 0 66px;
     background-color: $top-footer-bg-color;
     margin-top: 20px;
 

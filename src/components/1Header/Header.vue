@@ -1,8 +1,9 @@
 <script>
 // IMPORTS
 import TopBanner from './TopBanner.vue';
-import Logo from './Logo.vue';
+import Logo from '../Utilities/Logo.vue';
 import Navbar from './Navbar.vue';
+import { globalStore } from '../../globalStore';
 
 // /IMPORTS
 
@@ -11,6 +12,7 @@ export default {
     components: { TopBanner, Logo, Navbar },
     data() {
         return {
+            globalStore
 
         }
     },
@@ -23,7 +25,11 @@ export default {
     <header>
         <TopBanner />
         <div class="logo-wrapper">
-            <Logo />
+            <div class="custom-container">
+
+                <Logo :widthProp="'100px'" :imgPath="globalStore.logo.path" :altContent="globalStore.logo.altContent"
+                    :paddingProp="'36px 0'" />
+            </div>
         </div>
         <Navbar />
     </header>
@@ -35,6 +41,6 @@ export default {
 // /USES
 
 .logo-wrapper {
-    border: 1px solid $solid-border-color;
+    border-bottom: 1px solid $solid-border-color;
 }
 </style>
