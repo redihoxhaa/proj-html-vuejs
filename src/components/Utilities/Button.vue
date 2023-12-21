@@ -5,6 +5,21 @@
 
 export default {
     props: ['btnPaddingProp', 'contentText', 'btnColorProp', 'btnBgColorProp', 'btnBorderProp', 'btnBorderRadiusProp', 'btnFontSizeProp', 'btnFontWeightProp', 'btnWidthProp', 'btnHeightProp', 'btnHoverBgColorProp', 'btnSpaceProp'],
+    data() {
+        return {
+            btnPadding: this.btnPaddingProp,
+            btnColor: this.btnColorProp,
+            btnBgColor: this.btnBgColorProp,
+            btnBorder: this.btnBorderProp,
+            btnBorderRadius: this.btnBorderRadiusProp,
+            btnFontSize: this.btnFontSizeProp,
+            btnFontWeight: this.btnFontWeightProp,
+            btnWidth: this.btnWidthProp,
+            btnHeight: this.btnHeightProp,
+            btnHoverBgColor: this.btnHoverBgColorProp,
+            btnSpace: this.btnSpaceProp,
+        }
+    },
     computed: {
         cssProps() {
             return {
@@ -22,21 +37,7 @@ export default {
             }
         }
     },
-    data() {
-        return {
-            btnPadding: this.btnPaddingProp,
-            btnColor: this.btnColorProp,
-            btnBgColor: this.btnBgColorProp,
-            btnBorder: this.btnBorderProp,
-            btnBorderRadius: this.btnBorderRadiusProp,
-            btnFontSize: this.btnFontSizeProp,
-            btnFontWeight: this.btnFontWeightProp,
-            btnWidth: this.btnWidthProp,
-            btnHeight: this.btnHeightProp,
-            btnHoverBgColor: this.btnHoverBgColorProp,
-            btnSpace: this.btnSpaceProp,
-        }
-    },
+
     methods: {},
     mounted() { },
 }

@@ -2,19 +2,22 @@
 // IMPORTS
 import Tweet from '../../../Utilities/Tweet.vue'
 import ImagesToGrid from '../../../Utilities/ImagesToGrid.vue';
-import Tags from '../../../Utilities/Tags.vue';
+import BadgeList from '../../../Utilities/BadgeList.vue';
 import SocialCallToAction from '../../../Utilities/SocialCallToAction.vue';
 import { mainStore } from '../../../../mainStore';
+import { globalStore } from '../../../../globalStore';
+globalStore
 
 
 // /IMPORTS
 
 export default {
     props: [],
-    components: { Tweet, ImagesToGrid, Tags, SocialCallToAction },
+    components: { Tweet, ImagesToGrid, BadgeList, SocialCallToAction },
     data() {
         return {
-            mainStore
+            mainStore,
+            globalStore
         }
     },
     methods: {},
@@ -40,7 +43,9 @@ export default {
 
         <section class="tags">
             <h4 class="text-uppercase">Tags</h4>
-            <Tags />
+            <BadgeList :arrayToSearchIn="globalStore.tags" :badgePaddingProp="'0 7px'" :badgeColorProp="'#FFFFFF'"
+                :badgeBgColorProp="'#212529'" :badgeBorderRadiusProp="'10px'" :badgeFontSizeProp="'11px'"
+                :badgeFontWeightProp="'700'" :badgeGapProp="'8px'" />
         </section>
 
         <section class="find-us-on-facebook">
