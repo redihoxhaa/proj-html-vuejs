@@ -18,7 +18,7 @@ export default {
             </div>
         </div>
         <div class="custom-col-right d-flex flex-column">
-            <div>{{ content }}</div>
+            <div><a href="#">{{ content }}</a></div>
             <span>{{ date }}</span>
         </div>
     </div>

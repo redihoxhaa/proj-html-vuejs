@@ -28,7 +28,7 @@ export default {
                     :class="{ active: selectedLink === index }"><a href="#">{{
                         link.title }}</a></li>
             </ul>
-            <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+            <a href="#"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></a>
         </nav>
     </div>
 </template>

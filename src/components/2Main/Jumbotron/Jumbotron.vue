@@ -31,8 +31,10 @@ export default {
         <div class="custom-container">
             <ul class="d-flex flex-wrap">
                 <li v-for="card in jumbotronPostSplicer">
-                    <WidePicCard :bgPathProp="card.imgPath" :titleText="card.titleText" :paragraphText="card.paragraphText"
-                        :badgeText="card.categories[0]" />
+                    <a href="#">
+                        <WidePicCard :bgPathProp="card.imgPath" :titleText="card.titleText"
+                            :paragraphText="card.paragraphText" :badgeText="card.categories[0]" />
+                    </a>
                 </li>
             </ul>
         </div>

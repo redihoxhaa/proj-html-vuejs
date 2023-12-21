@@ -16,10 +16,10 @@ export default {
 
             <div>
                 <font-awesome-icon icon="fa-solid fa-chevron-right" />
-                <span class="user">
-                    {{ user }}</span>
+                <a href="#" class="user">
+                    {{ user }}</a>
                 commented on
-                <span class="post">{{ post }}</span>
+                <a href="#" class="post">{{ post }}</a>
             </div>
         </div>
         <span class="date">{{ date }}</span>
@@ -57,7 +57,7 @@ export default {
         }
 
         .post {
-            color: $top-footer-link-color;
+            color: $top-footer-link-color !important;
             font-size: 13px;
             font-weight: 500;
             margin-top: 8px;

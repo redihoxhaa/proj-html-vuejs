@@ -21,10 +21,11 @@ export default {
 <template>
     <div class="wrapper d-flex">
         <div class="pic-container">
-            <img :src="authorImgPath" :alt="authorName">
+            <a href="#">
+                <img :src="authorImgPath" :alt="authorName"></a>
         </div>
         <div class="content">
-            <h5>{{ authorName }}</h5>
+            <h5><a href="#">{{ authorName }}</a></h5>
             <div class="author-description">
                 {{ authorDescription }}
             </div>

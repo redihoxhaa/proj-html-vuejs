@@ -36,8 +36,9 @@ export default {
                 </div>
             </div>
         </div>
-
-        <BackToTopButton />
+        <div class="back-to-top-btn">
+            <BackToTopButton />
+        </div>
     </div>
 </template>
 
@@ -49,12 +50,17 @@ export default {
 .wrapper {
     background-color: $bottom-footer-bg-color;
     padding: 35px 0 28px;
+    position: relative;
 
     .copyright-disclaimer {
         color: $bottom-footer-copyright-color;
         margin-left: 46px;
         font-size: 12px;
         letter-spacing: -0.2px;
+    }
+
+    .back-to-top-btn {
+        margin-right: 10px;
     }
 }
 </style>

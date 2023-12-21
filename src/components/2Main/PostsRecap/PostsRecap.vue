@@ -40,10 +40,12 @@ export default {
                 <h4 class="text-uppercase">Popular Posts</h4>
                 <ul class="popular-posts-cards">
                     <li class="minimized-card" v-for="card in popularPostSplicer">
-                        <MinimizedPost
-                            :imgPathProp="card.littleImgPath ? card.littleImgPath : (card.imgPath ? card.imgPath : card.imgCollagePaths[0])"
-                            :titleText="card.titleText" :pubMonthProp="card.pubMonth" :pubDayProp="card.pubDay"
-                            :pubYearProp="card.pubYear" />
+                        <a href="#">
+                            <MinimizedPost
+                                :imgPathProp="card.littleImgPath ? card.littleImgPath : (card.imgPath ? card.imgPath : card.imgCollagePaths[0])"
+                                :titleText="card.titleText" :pubMonthProp="card.pubMonth" :pubDayProp="card.pubDay"
+                                :pubYearProp="card.pubYear" />
+                        </a>
                     </li>
                 </ul>
             </section>
@@ -52,8 +54,11 @@ export default {
                 <h4 class="text-uppercase">Recent Posts</h4>
                 <ul class="recent-posts-cards">
                     <li class="minimized-card" v-for="card in recentPostSplicer">
-                        <MinimizedPost :imgPathProp="card.littleImgPath" :titleText="card.titleText"
-                            :pubMonthProp="card.pubMonth" :pubDayProp="card.pubDay" :pubYearProp="card.pubYear" />
+                        <a href="#">
+
+                            <MinimizedPost :imgPathProp="card.littleImgPath" :titleText="card.titleText"
+                                :pubMonthProp="card.pubMonth" :pubDayProp="card.pubDay" :pubYearProp="card.pubYear" />
+                        </a>
                     </li>
                 </ul>
             </section>
@@ -62,10 +67,12 @@ export default {
                 <div class="top-section">
                     <h4 class="text-uppercase">Featured Posts</h4>
                     <div class="pic-card-wrapper">
-                        <WidePicCard :bgPathProp="mainStore.articles[14].imgPath"
-                            :titleText="mainStore.articles[14].titleText"
-                            :paragraphText="mainStore.articles[14].paragraphText"
-                            :badgeText="mainStore.articles[14].categories[0]" />
+                        <a href="#">
+                            <WidePicCard :bgPathProp="mainStore.articles[14].imgPath"
+                                :titleText="mainStore.articles[14].titleText"
+                                :paragraphText="mainStore.articles[14].paragraphText"
+                                :badgeText="mainStore.articles[14].categories[0]" />
+                        </a>
                     </div>
                 </div>
 

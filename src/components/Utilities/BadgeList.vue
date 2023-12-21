@@ -47,7 +47,7 @@ export default {
 
 <template>
     <ul class="badges-list d-flex text-uppercase" :style="cssProps">
-        <li class=" single-badge" v-for="tag in arrayToSearchIn">{{ tag }}</li>
+        <li class=" single-badge" v-for="tag in arrayToSearchIn"><a href="#">{{ tag }}</a></li>
     </ul>
 </template>
 

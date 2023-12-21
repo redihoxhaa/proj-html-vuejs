@@ -42,7 +42,7 @@ export default {
                 <CalendarElement :pubDay="pubDay" :pubMonth="pubMonth" />
             </div>
             <div class="custom-col-right">
-                <h2>{{ titleText }}</h2>
+                <h2><a href="#">{{ titleText }}</a></h2>
                 <p>{{ paragraphText }}</p>
                 <div class="bottom-infos d-flex justify-space-between">
                     <div class="engagement d-flex align-items-center">

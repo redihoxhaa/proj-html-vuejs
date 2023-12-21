@@ -1,29 +1,36 @@
 <script>
-// IMPORTS
-
-
-
-// /IMPORTS
-
 export default {
-    props: [],
-    components: {},
-    data() {
-        return {
-
+    methods: {
+        scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         }
-    },
-    methods: {},
-    mounted() { },
-}
+    }
+};
 </script>
 
-<template></template>
+
+<template>
+    <div class="scroll-to-top" @click="scrollToTop">
+        <font-awesome-icon icon="fa-solid fa-chevron-up" />
+    </div>
+</template>
 
 <style lang="scss" scoped>
-// USES
+.scroll-to-top {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    padding: 10px 19px;
+    background-color: #333333;
+    color: #B7B7B7;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
 
-
-
-// /USES
+    .fa-chevron-up {
+        font-size: 12px;
+    }
+}
 </style>

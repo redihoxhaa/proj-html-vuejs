@@ -3,7 +3,7 @@ export default {}
 </script>
 
 <template>
-    <div>Okler Themes</div>
+    <a href="#">Okler Themes</a>
 </template>
 
 <style lang="scss" scoped>
@@ -11,8 +11,8 @@ export default {}
 @use '../../assets/scss/partials/variables' as *;
 // /USES
 
-div {
-    color: #0088CC;
+a {
+    color: #0088CC !important;
     border-left: 5px solid #eeeeee;
     line-height: 42px;
     font-size: 14px;
