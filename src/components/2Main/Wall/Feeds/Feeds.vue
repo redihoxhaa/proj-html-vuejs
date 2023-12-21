@@ -1,20 +1,20 @@
 <script>
 // IMPORTS
-
-import LatestFromTwitter from './LatestFromTwitter.vue';
-import PhotosFromInstagram from './PhotosFromInstagram.vue';
-import Tags from './Tags.vue';
-import SocialCallToAction from './SocialCallToAction.vue';
+import Tweet from '../../../Utilities/Tweet.vue'
+import ImagesToGrid from '../../../Utilities/ImagesToGrid.vue';
+import Tags from '../../../Utilities/Tags.vue';
+import SocialCallToAction from '../../../Utilities/SocialCallToAction.vue';
+import { mainStore } from '../../../../mainStore';
 
 
 // /IMPORTS
 
 export default {
     props: [],
-    components: { LatestFromTwitter, PhotosFromInstagram, Tags, SocialCallToAction },
+    components: { Tweet, ImagesToGrid, Tags, SocialCallToAction },
     data() {
         return {
-
+            mainStore
         }
     },
     methods: {},
@@ -23,16 +23,70 @@ export default {
 </script>
 
 <template>
-    <LatestFromTwitter />
-    <PhotosFromInstagram />
-    <Tags />
-    <SocialCallToAction />
+    <div class="wrapper d-flex flex-column">
+        <section class="latest-from-twitter">
+            <h4 class="text-uppercase">Latest from Twitter</h4>
+            <ul>
+                <li v-for="tweet in mainStore.tweets">
+                    <Tweet :content="tweet.content" :date="tweet.date" />
+                </li>
+            </ul>
+        </section>
+
+        <section class="photos-from-instagram">
+            <h4 class="text-uppercase">Photos From Instagram</h4>
+            <ImagesToGrid :images="mainStore.tweetGridPaths" />
+        </section>
+
+        <section class="tags">
+            <h4 class="text-uppercase">Tags</h4>
+            <Tags />
+        </section>
+
+        <section class="find-us-on-facebook">
+            <h4 class="text-uppercase">Find us on Facebook</h4>
+            <SocialCallToAction />
+        </section>
+    </div>
 </template>
 
 <style lang="scss" scoped>
 // USES
-
-
-
+@use '../../../../assets/scss/partials/variables' as *;
 // /USES
+
+.wrapper {
+    margin-left: 30px;
+
+    section {
+        margin-bottom: 25px;
+
+        h4 {
+            font-weight: $pr-title-font-weight;
+            font-size: $pr-title-font-size;
+            padding-bottom: 17px;
+        }
+    }
+
+    .photos-from-instagram {
+        width: 330px;
+        margin-bottom: 25px;
+    }
+
+    .tags {
+        h4 {
+            padding-bottom: 14px;
+        }
+    }
+
+    .find-us-on-facebook {
+        margin-top: 71px;
+
+
+        h4 {
+            padding-bottom: 14px;
+        }
+    }
+
+}
 </style>

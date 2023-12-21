@@ -22,8 +22,12 @@ export default {
 <template>
     <div class="custom-container">
         <div class="wrapper d-flex">
-            <Contents />
-            <Feeds />
+            <div class="contents">
+                <Contents />
+            </div>
+            <div class="feeds">
+                <Feeds />
+            </div>
         </div>
     </div>
 </template>
@@ -35,5 +39,9 @@ export default {
 
 .custom-container {
     padding: $wall-padding;
+
+    .feeds {
+        flex-grow: 1;
+    }
 }
 </style>
