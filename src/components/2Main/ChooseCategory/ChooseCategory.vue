@@ -62,6 +62,7 @@ export default {
 .wrapper {
     background-color: $cc-bg-color;
     padding: $cc-padding;
+    user-select: none;
 
     ul {
         gap: 38px;

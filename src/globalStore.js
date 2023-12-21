@@ -9,6 +9,7 @@ export const globalStore = reactive({
         path: '/img/logo-footer.png',
         alt: 'Porto Logo'
     },
-    categories: ['Gadgets', 'Photography', 'Lifestyle', 'Fashion', 'Recipes', 'Travel', 'Business', 'Architecture', 'Reviews', 'Sports', 'Videos', 'Technology', 'Design']
+    categories: ['Gadgets', 'Photography', 'Lifestyle', 'Fashion', 'Recipes', 'Travel', 'Business', 'Architecture', 'Reviews', 'Sports', 'Videos', 'Technology', 'Design'],
+    pageNumbers: ['1', '2', '3']
 });
 

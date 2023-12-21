@@ -42,6 +42,7 @@ export default {
 // /USES
 .wrapper {
     width: 37px;
+    margin-right: 24px;
 
     .day {
         color: $calendar-main-color;

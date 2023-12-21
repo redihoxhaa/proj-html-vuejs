@@ -2,13 +2,13 @@
 // IMPORTS
 
 import MainContentTemplate from '../../../Utilities/MainContentTemplate.vue';
-import ContentsPageNav from './ContentsPageNav.vue';
+import PageNav from '../../../Utilities/PageNav.vue';
 import { mainStore } from '../../../../mainStore';
 // /IMPORTS
 
 export default {
     props: [],
-    components: { MainContentTemplate, ContentsPageNav, },
+    components: { MainContentTemplate, PageNav, },
     data() {
         return {
             mainStore
@@ -27,16 +27,17 @@ export default {
 </script>
 
 <template>
-    <ul>
+    <ul class="d-flex flex-column">
         <li v-for="article in contentsPostSplicer">
             <MainContentTemplate :titleText="article.titleText" :paragraphText="article.paragraphText"
                 :authorName="article.authorName" :categories="article.categories" :comments="article.comments"
                 :imgPath="article.imgPath ? article.imgPath : (article.littleImgPath ? article.littleImgPath : article.imgCollagePaths)"
                 :pubDay="article.pubDay" :pubMonth="article.pubMonth" />
         </li>
+        <li class="page-navigator">
+            <PageNav />
+        </li>
     </ul>
-
-    <ContentsPageNav />
 </template>
 
 <style lang="scss" scoped>
@@ -45,9 +46,15 @@ export default {
 // /USES
 
 ul {
-    li {
+    width: 1050px;
 
-        width: 1050px;
+    li {
+        width: fit-content;
+    }
+
+    .page-navigator {
+        margin-top: -11px;
+        align-self: flex-end;
     }
 }
 </style>

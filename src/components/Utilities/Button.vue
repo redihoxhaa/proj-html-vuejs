@@ -4,7 +4,7 @@
 // /IMPORTS
 
 export default {
-    props: ['btnPaddingProp', 'contentText', 'btnColorProp', 'btnBgColorProp', 'btnBorderProp', 'btnBorderRadiusProp', 'btnFontSizeProp', 'btnFontWeightProp', 'btnWidthProp', 'btnHoverBgColorProp'],
+    props: ['btnPaddingProp', 'contentText', 'btnColorProp', 'btnBgColorProp', 'btnBorderProp', 'btnBorderRadiusProp', 'btnFontSizeProp', 'btnFontWeightProp', 'btnWidthProp', 'btnHeightProp', 'btnHoverBgColorProp', 'btnSpaceProp'],
     computed: {
         cssProps() {
             return {
@@ -16,7 +16,9 @@ export default {
                 '--btn-font-size': this.btnFontSize,
                 '--btn-font-weight': this.btnFontWeight,
                 '--btn-width': this.btnWidth,
-                '--btn-hover-bg-color': this.btnHoverBgColor
+                '--btn-height': this.btnHeight,
+                '--btn-hover-bg-color': this.btnHoverBgColor,
+                '--btn-space': this.btnSpace
             }
         }
     },
@@ -30,7 +32,9 @@ export default {
             btnFontSize: this.btnFontSizeProp,
             btnFontWeight: this.btnFontWeightProp,
             btnWidth: this.btnWidthProp,
-            btnHoverBgColor: this.btnHoverBgColorProp
+            btnHeight: this.btnHeightProp,
+            btnHoverBgColor: this.btnHoverBgColorProp,
+            btnSpace: this.btnSpaceProp,
         }
     },
     methods: {},
@@ -50,14 +54,16 @@ export default {
 // /USES
 
 .custom-btn {
+    white-space: var(--btn-space);
     padding: var(--btn-padding);
     color: var(--btn-color);
     background-color: var(--btn-bg-color);
     border: var(--btn-border);
-    border-radius: var(btn-border-radius);
+    border-radius: var(--btn-border-radius);
     font-size: var(--btn-font-size);
     font-weight: var(--btn-font-weight);
     width: var(--btn-width);
+    height: var(--btn-height);
 
     &:hover {
         background-color: var(--btn-hover-bg-color);
